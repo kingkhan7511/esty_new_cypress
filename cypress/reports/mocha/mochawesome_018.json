@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-16T13:37:39.750Z",
+    "end": "2022-01-16T13:38:52.103Z",
+    "duration": 72353,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4e9fd116-1480-4fd6-bd27-efcbccdfd295",
+      "title": "",
+      "fullFile": "cypress/integration/FormSubmission.js",
+      "file": "cypress/integration/FormSubmission.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Comfirming Title and Description",
+          "fullTitle": "Comfirming Title and Description",
+          "timedOut": null,
+          "duration": 30210,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://docs.google.com/forms/d/e/1FAIpQLSdSGEC9iMTjG8OHeVQ_bW5z8mqXVAJ-WibXjdWpDG-76w9jFw/viewform');\ncy.wait(700);\ncy.get('.freebirdFormviewerViewHeaderTitle').should('contain', 'Energy drink survey'); // Assertion for Confirming Title \ncy.log('Energy drink survey');\ncy.wait(700);\ncy.get('.freebirdFormviewerViewHeaderDescription').should('contain', 'To see people drinking habbits'); // Assertion for Confirming Description \ncy.wait(700);\ncy.get('#i11 > .appsMaterialWizToggleRadiogroupRadioButtonContainer > .appsMaterialWizToggleRadiogroupOffRadio').click();\ncy.wait(700);\ncy.get('.quantumWizTextinputPaperinputInput').type('DummyText@gmail.com', {\n  delay: 400\n});\ncy.wait(700);\ncy.get(':nth-child(4) > .freebirdMaterialScalecontentInput > .appsMaterialWizToggleRadiogroupElContainer > .appsMaterialWizToggleRadiogroupEl > .appsMaterialWizToggleRadiogroupRadioButtonContainer > .appsMaterialWizToggleRadiogroupOffRadio').click();\ncy.wait(700);\ncy.get('#i39 > .quantumWizTogglePapercheckboxInnerBox').click();\ncy.wait(700);\ncy.get('.freebirdFormviewerViewNavigationLeftButtons > .appsMaterialWizButtonEl > .appsMaterialWizButtonPaperbuttonContent').should('contain', 'Submit').click();\ncy.wait(700);\ncy.get('.freebirdFormviewerViewResponseLinksContainer > a').click();\ncy.wait(700);",
+          "err": {},
+          "uuid": "8a6d09f5-dcd6-4271-9674-0460d3a4ca15",
+          "parentUUID": "4e9fd116-1480-4fd6-bd27-efcbccdfd295",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Submiting Without Filling Required Fields (*)",
+          "fullTitle": "Submiting Without Filling Required Fields (*)",
+          "timedOut": null,
+          "duration": 2861,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://docs.google.com/forms/d/e/1FAIpQLSdSGEC9iMTjG8OHeVQ_bW5z8mqXVAJ-WibXjdWpDG-76w9jFw/viewform');\ncy.wait(700);\ncy.get('.freebirdFormviewerViewNavigationLeftButtons > .appsMaterialWizButtonEl > .appsMaterialWizButtonPaperbuttonContent').should('contain', 'Submit').click();",
+          "err": {},
+          "uuid": "5764fe06-6046-407a-b804-4296a7daba4d",
+          "parentUUID": "4e9fd116-1480-4fd6-bd27-efcbccdfd295",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Submiting Without Email",
+          "fullTitle": "Submiting Without Email",
+          "timedOut": null,
+          "duration": 6020,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://docs.google.com/forms/d/e/1FAIpQLSdSGEC9iMTjG8OHeVQ_bW5z8mqXVAJ-WibXjdWpDG-76w9jFw/viewform');\ncy.wait(700);\ncy.get('#i11 > .appsMaterialWizToggleRadiogroupRadioButtonContainer > .appsMaterialWizToggleRadiogroupOffRadio').click();\ncy.wait(700);\ncy.get(':nth-child(4) > .freebirdMaterialScalecontentInput > .appsMaterialWizToggleRadiogroupElContainer > .appsMaterialWizToggleRadiogroupEl > .appsMaterialWizToggleRadiogroupRadioButtonContainer > .appsMaterialWizToggleRadiogroupOffRadio').click();\ncy.wait(700);\ncy.get('#i39 > .quantumWizTogglePapercheckboxInnerBox').click();\ncy.wait(700);\ncy.get('.freebirdFormviewerViewNavigationLeftButtons > .appsMaterialWizButtonEl > .appsMaterialWizButtonPaperbuttonContent').should('contain', 'Submit').click();\ncy.wait(700);",
+          "err": {},
+          "uuid": "1002fa2a-b78a-4cef-be8c-829158ee3a80",
+          "parentUUID": "4e9fd116-1480-4fd6-bd27-efcbccdfd295",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "How may do you drink a week",
+          "fullTitle": "How may do you drink a week",
+          "timedOut": null,
+          "duration": 14566,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://docs.google.com/forms/d/e/1FAIpQLSdSGEC9iMTjG8OHeVQ_bW5z8mqXVAJ-WibXjdWpDG-76w9jFw/viewform');\ncy.wait(700); // cy.get('#i11 > .appsMaterialWizToggleRadiogroupRadioButtonContainer > .appsMaterialWizToggleRadiogroupOffRadio').click();\ncy.wait(700);\ncy.get('.quantumWizTextinputPaperinputInput').type('DummyText@gmail.com', {\n  delay: 400\n});\ncy.wait(700);\ncy.get(':nth-child(4) > .freebirdMaterialScalecontentInput > .appsMaterialWizToggleRadiogroupElContainer > .appsMaterialWizToggleRadiogroupEl > .appsMaterialWizToggleRadiogroupRadioButtonContainer > .appsMaterialWizToggleRadiogroupOffRadio').click();\ncy.wait(700);\ncy.get('#i39 > .quantumWizTogglePapercheckboxInnerBox').click();\ncy.wait(700);\ncy.get('.freebirdFormviewerViewNavigationLeftButtons > .appsMaterialWizButtonEl > .appsMaterialWizButtonPaperbuttonContent').should('contain', 'Submit').click();\ncy.wait(700);",
+          "err": {},
+          "uuid": "26ee7e3e-6fd8-4525-bfa3-7c8729b25e19",
+          "parentUUID": "4e9fd116-1480-4fd6-bd27-efcbccdfd295",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Whats days would you drink energy drinks? Selecting more then 3 options",
+          "fullTitle": "Whats days would you drink energy drinks? Selecting more then 3 options",
+          "timedOut": null,
+          "duration": 15478,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://docs.google.com/forms/d/e/1FAIpQLSdSGEC9iMTjG8OHeVQ_bW5z8mqXVAJ-WibXjdWpDG-76w9jFw/viewform');\ncy.wait(700);\ncy.get('#i11 > .appsMaterialWizToggleRadiogroupRadioButtonContainer > .appsMaterialWizToggleRadiogroupOffRadio').click();\ncy.wait(700);\ncy.get('.quantumWizTextinputPaperinputInput').type('DummyText@gmail.com', {\n  delay: 400\n});\ncy.wait(700);\ncy.get(':nth-child(4) > .freebirdMaterialScalecontentInput > .appsMaterialWizToggleRadiogroupElContainer > .appsMaterialWizToggleRadiogroupEl > .appsMaterialWizToggleRadiogroupRadioButtonContainer > .appsMaterialWizToggleRadiogroupOffRadio').click();\ncy.wait(700);\ncy.get('#i39 > .quantumWizTogglePapercheckboxInnerBox').click();\ncy.wait(200);\ncy.get('#i33 > .quantumWizTogglePapercheckboxInnerBox').click();\ncy.wait(200);\ncy.get('#i42 > .quantumWizTogglePapercheckboxInnerBox').click();\ncy.wait(200);\ncy.get('#i45 > .quantumWizTogglePapercheckboxInnerBox').click();\ncy.wait(700);\ncy.get('.freebirdFormviewerViewNavigationLeftButtons > .appsMaterialWizButtonEl > .appsMaterialWizButtonPaperbuttonContent').should('contain', 'Submit').click();\ncy.wait(700);",
+          "err": {},
+          "uuid": "0f121500-5a82-46f4-a884-76dd83092b9c",
+          "parentUUID": "4e9fd116-1480-4fd6-bd27-efcbccdfd295",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "8a6d09f5-dcd6-4271-9674-0460d3a4ca15",
+        "5764fe06-6046-407a-b804-4296a7daba4d",
+        "1002fa2a-b78a-4cef-be8c-829158ee3a80",
+        "26ee7e3e-6fd8-4525-bfa3-7c8729b25e19",
+        "0f121500-5a82-46f4-a884-76dd83092b9c"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 69135,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

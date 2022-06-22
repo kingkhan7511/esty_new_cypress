@@ -1,0 +1,115 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-01-16T10:46:13.675Z",
+    "end": "2022-01-16T10:47:15.404Z",
+    "duration": 61729,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b077a185-d728-4fa9-b747-2974eb28b1c4",
+      "title": "",
+      "fullFile": "cypress/integration/agencyanalytics.js",
+      "file": "cypress/integration/agencyanalytics.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Agency Analytics website testing Bug in Signup Page",
+          "fullTitle": "Agency Analytics website testing Bug in Signup Page",
+          "timedOut": null,
+          "duration": 38160,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"https://agencyanalytics.com/\");\ncy.get('.hamburger__box').click();\ncy.wait(1500);\ncy.get('.o-container > .menu > .menu__list > :nth-child(5) > .menu__item-content > .link-text > .link-label').click();\ncy.wait(1500);\ncy.get('.login-prompt > .aui-button > .aui-button-text').click();\ncy.wait(2000);\ncy.get('.login-dual > :nth-child(1) > .login-input > .login-input-input').type('Irfan1122', {\n  delay: 500\n});\ncy.wait(1500);\ncy.get(':nth-child(2) > .login-input > .login-input-input').type('ullah@', {\n  delay: 500\n});\ncy.wait(1500);\ncy.get(':nth-child(4) > .login-input-input').type('Irfan1122', {\n  delay: 500\n});\ncy.wait(1500);\ncy.get(':nth-child(7) > .login-input-input').type('Irfan1122...l.l', {\n  delay: 500\n});\ncy.wait(1500);\ncy.get('.login-buttons > .aui-button').click();",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.login-dual > :nth-child(1) > .login-input > .login-input-input`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.login-dual > :nth-child(1) > .login-input > .login-input-input`, but never found it.\n    at Context.eval (https://agencyanalytics.com/__cypress/tests?p=cypress\\integration\\agencyanalytics.js:108:6)",
+            "diff": null
+          },
+          "uuid": "1848afef-cad0-4fd4-bcf3-2248f510a7ba",
+          "parentUUID": "b077a185-d728-4fa9-b747-2974eb28b1c4",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Agency Analytics website testing Bug in Forget Password Page",
+          "fullTitle": "Agency Analytics website testing Bug in Forget Password Page",
+          "timedOut": null,
+          "duration": 18988,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"https://agencyanalytics.com/\");\ncy.get('.hamburger__box').click();\ncy.wait(1500);\ncy.get('.o-container > .menu > .menu__list > :nth-child(5) > .menu__item-content > .link-text > .link-label').click();\ncy.wait(1500);\ncy.get('.login-link').click();\ncy.wait(1500);\ncy.get('.login-input-input').type('Irfan1122', {\n  delay: 500\n});\ncy.wait(1500);\ncy.get('.input-margin-bottom-sm > .aui-button > .aui-button-text').click(); //  cy.get('.login-buttons > .aui-button').click()",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.login-input-input`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.login-input-input`, but never found it.\n    at Context.eval (https://agencyanalytics.com/__cypress/tests?p=cypress\\integration\\agencyanalytics.js:134:6)",
+            "diff": null
+          },
+          "uuid": "ee963f66-0d35-4832-9c9f-5ec675b99a0b",
+          "parentUUID": "b077a185-d728-4fa9-b747-2974eb28b1c4",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "1848afef-cad0-4fd4-bcf3-2248f510a7ba",
+        "ee963f66-0d35-4832-9c9f-5ec675b99a0b"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 57148,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

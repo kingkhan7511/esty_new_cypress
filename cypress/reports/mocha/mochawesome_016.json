@@ -1,0 +1,88 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-16T10:49:26.248Z",
+    "end": "2022-01-16T10:49:48.185Z",
+    "duration": 21937,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2765052a-a442-4b3f-83e0-c8db3210dd73",
+      "title": "",
+      "fullFile": "cypress/integration/Screenshot.js",
+      "file": "cypress/integration/Screenshot.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "New Window",
+          "fullTitle": "New Window",
+          "timedOut": null,
+          "duration": 19363,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "// cy.visit('https://www.google.com/forms/about/');\n//cy.wait(300);\n//cy.get('.hero-cta > .glue-button--medium-emphasis').click();\n// cy.get('.whsOnd zHQkBf').type('johndumyemail');\n// class=\"whsOnd zHQkBf\"\n//cy.visit('https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2F%3Ftgif%3Dd&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2F%3Ftgif%3Dd&ltmpl=forms&flowName=GlifWebSignIn&flowEntry=ServiceLogin');\ncy.visit('https://docs.google.com/forms/d/e/1FAIpQLSdSGEC9iMTjG8OHeVQ_bW5z8mqXVAJ-WibXjdWpDG-76w9jFw/viewform');\ncy.wait(700);\ncy.get('#i11 > .appsMaterialWizToggleRadiogroupRadioButtonContainer > .appsMaterialWizToggleRadiogroupOffRadio').click();\ncy.wait(700);\ncy.get('.quantumWizTextinputPaperinputInput').type('DummyText@gmail.com', {\n  delay: 400\n});\ncy.wait(700);\ncy.get(':nth-child(4) > .freebirdMaterialScalecontentInput > .appsMaterialWizToggleRadiogroupElContainer > .appsMaterialWizToggleRadiogroupEl > .appsMaterialWizToggleRadiogroupRadioButtonContainer > .appsMaterialWizToggleRadiogroupOffRadio').click();\ncy.wait(700);\ncy.get('#i39 > .quantumWizTogglePapercheckboxInnerBox').click();\ncy.wait(700);\ncy.get('.freebirdFormviewerViewNavigationLeftButtons > .appsMaterialWizButtonEl > .appsMaterialWizButtonPaperbuttonContent').click();\ncy.wait(700);\ncy.get('.freebirdFormviewerViewResponseLinksContainer > a').click();\ncy.wait(700);",
+          "err": {},
+          "uuid": "cc32f17a-b9cb-4442-bad1-adea8b9a2bbc",
+          "parentUUID": "2765052a-a442-4b3f-83e0-c8db3210dd73",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "cc32f17a-b9cb-4442-bad1-adea8b9a2bbc"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 19363,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

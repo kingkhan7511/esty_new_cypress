@@ -1,0 +1,92 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-01-14T11:44:03.921Z",
+    "end": "2022-01-14T11:44:33.323Z",
+    "duration": 29402,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2cfb50df-a2e1-4bbd-8072-c6c4febbb692",
+      "title": "",
+      "fullFile": "cypress/integration/my_first_test.js",
+      "file": "cypress/integration/my_first_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "codemach solutions website testing",
+          "fullTitle": "codemach solutions website testing",
+          "timedOut": null,
+          "duration": 23719,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "//cy.visit(\"https://google.com/\")\ncy.visit(\"https://codemachsolutions.com/\");\ncy.get('.icon-menu-fine').click();\ncy.get('#menu-item-10290 > a').click();\ncy.get('#wpforms-10300-field_4').type('Irfanullah', {\n  delay: 3000\n});\ncy.get('#wpforms-10300-field_1').type('irfan.khan24460@gmail.com', {\n  delay: 3000\n});\ncy.get('#wpforms-10300-field_3').type('Testing of website', {\n  delay: 3000\n});\ncy.get('#wpforms-10300-field_2').type('For Testing purpose please ignore', {\n  delay: 3000\n});\ncy.get('#wpforms-submit-10300').click({\n  force: true\n});",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.icon-menu-fine`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.icon-menu-fine`, but never found it.\n    at Context.eval (https://codemachsolutions.com/__cypress/tests?p=cypress\\integration\\my_first_test.js:103:6)",
+            "diff": null
+          },
+          "uuid": "54a4aa87-5450-4d2f-8e76-a58625a1b773",
+          "parentUUID": "2cfb50df-a2e1-4bbd-8072-c6c4febbb692",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "54a4aa87-5450-4d2f-8e76-a58625a1b773"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 23719,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-11-20T05:42:55.838Z",
+    "end": "2021-11-20T05:43:12.093Z",
+    "duration": 16255,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "48fdfcc3-26f8-4c8d-a27c-566238f88bec",
+      "title": "",
+      "fullFile": "cypress/integration/agencyanalytics.js",
+      "file": "cypress/integration/agencyanalytics.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Agency Analytics website testing Bug in Signup Page",
+          "fullTitle": "Agency Analytics website testing Bug in Signup Page",
+          "timedOut": null,
+          "duration": 6510,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"https://agencyanalytics.com/\");\ncy.get('.hamburger__box').click();\ncy.wait(1500);\ncy.get('.o-container > .menu > .menu__list > :nth-child(5) > .menu__item-content > .link-text > .link-label').click();\ncy.wait(1500);\ncy.get('.login-prompt > .aui-button > .aui-button-text').click();\ncy.wait(2000);\ncy.get('.login-dual > :nth-child(1) > .login-input > .login-input-input').type('Irfan1122', {\n  delay: 500\n});\ncy.wait(1500);\ncy.get(':nth-child(2) > .login-input > .login-input-input').type('ullah@', {\n  delay: 500\n});\ncy.wait(1500);\ncy.get(':nth-child(4) > .login-input-input').type('Irfan1122', {\n  delay: 500\n});\ncy.wait(1500);\ncy.get(':nth-child(7) > .login-input-input').type('Irfan1122...l.l', {\n  delay: 500\n});\ncy.wait(1500);\ncy.get('.login-buttons > .aui-button').click();",
+          "err": {
+            "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Intercom is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+            "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Intercom is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.<anonymous> (https://agencyanalytics.com/js/index.js?id=ab0b762d09a1b16ab705:1:15111)\n    at HTMLButtonElement.s.__trace__ (https://agencyanalytics.com/js/vendor.js?id=4a49866fc11abcf9e73a:2:32761)",
+            "diff": null
+          },
+          "uuid": "6ffc832a-b11a-4aca-90cc-62dfad345785",
+          "parentUUID": "48fdfcc3-26f8-4c8d-a27c-566238f88bec",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Agency Analytics website testing Bug in Forget Password Page",
+          "fullTitle": "Agency Analytics website testing Bug in Forget Password Page",
+          "timedOut": null,
+          "duration": 5230,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"https://agencyanalytics.com/\");\ncy.get('.hamburger__box').click();\ncy.wait(1500);\ncy.get('.o-container > .menu > .menu__list > :nth-child(5) > .menu__item-content > .link-text > .link-label').click();\ncy.wait(1500);\ncy.get('.login-link').click();\ncy.wait(1500);\ncy.get('.login-input-input').type('Irfan1122', {\n  delay: 500\n});\ncy.wait(1500);\ncy.get('.input-margin-bottom-sm > .aui-button > .aui-button-text').click(); //  cy.get('.login-buttons > .aui-button').click()",
+          "err": {
+            "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Intercom is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+            "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > Intercom is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.<anonymous> (https://agencyanalytics.com/js/index.js?id=ab0b762d09a1b16ab705:1:15111)\n    at HTMLButtonElement.s.__trace__ (https://agencyanalytics.com/js/vendor.js?id=4a49866fc11abcf9e73a:2:32761)",
+            "diff": null
+          },
+          "uuid": "961708ff-bdb7-4d03-b8ce-f2199bb5f834",
+          "parentUUID": "48fdfcc3-26f8-4c8d-a27c-566238f88bec",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "6ffc832a-b11a-4aca-90cc-62dfad345785",
+        "961708ff-bdb7-4d03-b8ce-f2199bb5f834"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 11740,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

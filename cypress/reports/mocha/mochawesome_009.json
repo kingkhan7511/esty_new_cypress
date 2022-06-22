@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-01-14T11:43:08.579Z",
+    "end": "2022-01-14T11:43:48.328Z",
+    "duration": 39749,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ecdf339a-85f1-45dd-9549-260b5dc83ec8",
+      "title": "",
+      "fullFile": "cypress/integration/fiverProject.js",
+      "file": "cypress/integration/fiverProject.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dec73c97-3484-4f89-aba8-ad374eae621e",
+          "title": "Code Mach",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "codemach solutions",
+              "fullTitle": "Code Mach codemach solutions",
+              "timedOut": null,
+              "duration": 33857,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const obj = new _fiverClass.default();\nobj.visitURl();\nobj.Search(); // obj.Email_Passw('bryan','bryan')\n// obj.loginbtn()\n//  cy.wait(3000)\n// obj.reservation()\n// obj.QuotesManagment()\n// obj.AddCustomer()\n///obj.OpenCustomerList()",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#search_button > .icon-search-fine`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#search_button > .icon-search-fine`, but never found it.\n    at fiverClass.Search (https://codemachsolutions.com/__cypress/tests?p=cypress\\integration\\fiverProject.js:140:8)\n    at Context.eval (https://codemachsolutions.com/__cypress/tests?p=cypress\\integration\\fiverProject.js:107:9)",
+                "diff": null
+              },
+              "uuid": "0f9a34df-b6bc-4613-a607-1c013079d1d4",
+              "parentUUID": "dec73c97-3484-4f89-aba8-ad374eae621e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0f9a34df-b6bc-4613-a607-1c013079d1d4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 33857,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

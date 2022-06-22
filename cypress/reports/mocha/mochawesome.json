@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-05-11T09:07:55.185Z",
+    "end": "2022-05-11T09:09:11.411Z",
+    "duration": 76226,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2e7544c3-fcae-4ec7-a105-c9b1c419f6f2",
+      "title": "",
+      "fullFile": "cypress/integration/FormSubmission.js",
+      "file": "cypress/integration/FormSubmission.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c6df702d-5b56-4050-bb2b-fff0e911e107",
+          "title": "Example to demonstrate the handling of new browser windows in cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Handling new Browser Window",
+              "fullTitle": "Example to demonstrate the handling of new browser windows in cypress Handling new Browser Window",
+              "timedOut": null,
+              "duration": 72994,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.master.medmanager.indevelopment.xyz/');\ncy.wait(3000);\ncy.window().then(win => {\n  cy.stub(win, 'open', url => {\n    win.location.href = 'https://sigmahealthcareb2ctest.b2clogin.com/sigmahealthcareb2ctest.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=a229a97a-5222-4f7c-bb80-803b85252188&redirect_uri=https%3A%2F%2Fwww.master.medmanager.indevelopment.xyz%2Fauth%2Fcallback&response_type=code&scope=openid%20a229a97a-5222-4f7c-bb80-803b85252188&state=2815c97911ad4202aa97f3d3d02ab11d&code_challenge=bHmA-Fx4Y5qCLXG2LGgGJDQZuTPDdNenzaqXIdZywUw&code_challenge_method=S256&display=popup&response_mode=fragment';\n  }).as(\"window\");\n});\ncy.wait(3000);\ncy.get('[data-cy=login-page-login-button]').click();\ncy.wait(3000); //cy.get('button').click()\n//cy.wait(3000);\ncy.get('@window').should(\"be.calledWith\"); //, 'https://sigmahealthcareb2ctest.b2clogin.com/sigmahealthcareb2ctest.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=a229a97a-5222-4f7c-bb80-803b85252188&redirect_uri=https%3A%2F%2Fwww.master.medmanager.indevelopment.xyz%2Fauth%2Fcallback&response_type=code&scope=openid%20a229a97a-5222-4f7c-bb80-803b85252188&state=2815c97911ad4202aa97f3d3d02ab11d&code_challenge=bHmA-Fx4Y5qCLXG2LGgGJDQZuTPDdNenzaqXIdZywUw&code_challenge_method=S256&display=popup&response_mode=fragment'\")\n// cy.get('h1').should('have.text', 'Welcome to the-internet')\n//  cy.get(':nth-child(1) > a').click()\ncy.get('#signInName').type('DummyText', {\n  delay: 200\n});\ncy.wait(3000);\ncy.get('#password').type('DummyText', {\n  delay: 200\n});\ncy.wait(3000);\ncy.get('#next').click();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:137921:13)\n    at https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:138217:16\n    at tryCatcher (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:10798:23)\n    at https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:5920:41\n    at tryCatcher (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:10798:23)\n    at Promise._settlePromiseFromHandler (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:8733:31)\n    at Promise._settlePromise (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:8790:18)\n    at Promise._settlePromise0 (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:8835:10)\n    at Promise._settlePromises (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:8911:18)\n    at _drainQueueStep (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:5505:12)\n    at _drainQueue (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:5498:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:5514:5)\n    at Async.drainQueues (https://www.master.medmanager.indevelopment.xyz/__cypress/runner/cypress_runner.js:5384:14)\nFrom Your Spec Code:\n    at Context.eval (https://www.master.medmanager.indevelopment.xyz/__cypress/tests?p=cypress\\integration\\FormSubmission.js:120:8)",
+                "diff": null
+              },
+              "uuid": "375a60d8-3933-4026-b5d1-7ea39ea7302a",
+              "parentUUID": "c6df702d-5b56-4050-bb2b-fff0e911e107",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "375a60d8-3933-4026-b5d1-7ea39ea7302a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 72994,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
